@@ -35,3 +35,42 @@ button {
     height: 24px;
     fill: #000;
 }
+
+/* GRID CONTAINER */
+.grid-container {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+}
+
+/* HEADER */
+.header {
+    background-color: gray;
+    grid-area: 1 / 1 / 2 / 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .title {
+    font-size: 6rem;
+    margin-bottom: 5px;
+}
+
+/* ASIDE */
+.form-container {
+    background-color: brown;
+    grid-area: 2 / 1 / 8 / 3;
+}
+
+/* MAIN */
+.books-container {
+    grid-area: 2 / 3 / 8 / 8;
+    padding: 30px 50px;
+    background-color: rgb(221, 233, 252);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 30px;
+}
