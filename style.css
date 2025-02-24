@@ -74,3 +74,29 @@ button {
     grid-auto-rows: 300px;
     gap: 30px;
 }
+
+/* CARD */
+.card {
+    background-color: #FFF;
+    min-width: 350px;
+    min-height: 250px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card .book-title {
+    font-size: 2.2rem;
+    align-self: baseline;
+    border-bottom: 1px solid #000;
+}
+.card .book-description {
+    font-size: 1.8rem;
+}
+.card .card-buttons {
+    justify-self: end;
+    align-self: end;
+}
+
+
