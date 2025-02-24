@@ -72,5 +72,6 @@ newBookForm.addEventListener('submit', (e) => {
 
 
 
-    addBookToLibrary(title, author, pages, status)
+    addBookToLibrary(title, author, pages, status);
+    newBookForm.reset();
 })
