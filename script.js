@@ -1,4 +1,5 @@
 const booksContainer = document.querySelector(".books-container");
+const newBookForm = document.querySelector("#new-book-form");
 
 const myLibrary = [];
 
@@ -51,4 +52,25 @@ function displayBooks() {
     });
 }
 
-displayBooks();
+
+// stops the form from submiting and calls addBookToLibrary with the user input
+newBookForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const title = document.querySelector("#title").value;
+    const author = document.querySelector("#author").value;
+    const pages = document.querySelector("#pages").value;
+    
+    let selected;
+    const radioButtons = document.querySelectorAll("input[name='status']");
+    for (const radioButton of radioButtons){
+        if (radioButton.checked) {
+            selected = radioButton.value;
+        }
+    }
+    const status = selected;
+
+
+
+    addBookToLibrary(title, author, pages, status)
+})
