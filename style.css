@@ -1,0 +1,37 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Helvetica", "Arial", sans-serif;
+    height: 100vh;
+}
+
+ul li {
+    list-style-type: none;
+}
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #000;
+}
