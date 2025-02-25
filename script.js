@@ -93,6 +93,7 @@ newBookForm.addEventListener('submit', (e) => {
 
 // deletes a book from the array and refresh display
 function deleteBook(index) {
-    myLibrary.splice(index, 1);
+    //Use of Number() to avoid any possible error 
+    myLibrary.splice(Number(index), 1);
     displayBooks();
 }
