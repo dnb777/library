@@ -10,6 +10,10 @@ function Book(title, author, pages, status) {
     this.status = status;
 }
 
+Book.prototype.changeReadStatus = function(){
+    this.status = (this.status === "not read") ? "read" : "not read";
+}
+
 function addBookToLibrary(title, author, pages, status) {
     const newBook = new Book(title,author,pages,status);
     myLibrary.push(newBook);
