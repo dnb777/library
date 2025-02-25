@@ -170,7 +170,6 @@ button[type="submit"] .icon {
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    transition:all .2s ease-in-out;
 }
 .card-buttons svg {
     fill: #000;
@@ -178,7 +177,10 @@ button[type="submit"] .icon {
     height: 30px;
 }
 
-.card-buttons:active {
+.card-btn {
+    transition:all .2s ease-in-out;
+}
+.card-btn:active {
     transform: scale(1.2);
 }
 
