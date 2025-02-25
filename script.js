@@ -43,6 +43,10 @@ function displayBooks() {
         status.textContent = `Status: ${book.status}`;
         status.classList.add("book-description");
         
+        //buttons container
+        const btnContainer = document.createElement("div");
+        btnContainer.classList.add("card-buttons")
+        
         // Add delete button with an svg
         const deleteBtn = document.createElement("button");
         //the data-index is used to delete the books
